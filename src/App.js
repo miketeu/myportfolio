@@ -5,6 +5,7 @@ import Home from './components/pages/Home';
 import About from './components/pages/Header';
 import Blog from './components/pages/Project';
 import Contact from './components/pages/ProjectGallery';
+import Header from './components/pages/Header';
 
 function App() {
   return (
@@ -15,11 +16,11 @@ function App() {
         <Routes basename="myportfolio">
           {/* Define routes using the Route component to render different page components at different paths */}
           {/* Define a default route that will render the Home component */}
-          <Route path="/myportfolio" element={<Home />} />
-          <Route path="/myportfolio/about" element={<About />} />
-          <Route path="/myportfolio/blog" element={<Blog />} />
-          {/* Define a route that will have descendant routes */}
-          <Route path="/myportfolio/contact/*" element={<Contact />} />
+          <Route path="/myportfolio/Home.js" element={<Home />} />
+          <Route path="/myportfolio/Header.js" element={<Header />} />
+          <Route path="/myportfolio/Project.js" element={<Project />} />
+          <Route path="/myportfolio/ProjectGallery.js" element={<ProjectGallery />} />
+          <Route path="/myportfolio/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>
