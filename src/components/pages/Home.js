@@ -1,7 +1,9 @@
+import bodyParser from "body-parser";
 import React from "react";
 
 function Home() {
   return (
+    
     <div>
       <h1>Home Page</h1>
       <p>
@@ -15,6 +17,7 @@ function Home() {
         malesuada fames ac ante ipsum primis in faucibus.
       </p>
     </div>
+    
   );
 }
 
