@@ -14,32 +14,49 @@ function NavTabs() {
         >
           Home
         </NavLink>
+
+
       </li>
 
-      
+      <ul className="nav nav-tabs">
       <li className="nav-item">
         <NavLink
-          to="/myportfolio/about"
+          to="/myportfolio/Project/"
+          end
           className={({ isActive }) =>
             isActive ? 'nav-link active' : 'nav-link'
           }
         >
-          About
+          Project
         </NavLink>
       </li>
+
+
+
       <li className="nav-item">
         <NavLink
-          to="/myportfolio/blog"
+          to="/myportfolio/Header/"
           className={({ isActive }) =>
             isActive ? 'nav-link active' : 'nav-link'
           }
         >
-          Blog
+          Header
+        </NavLink>
+      </li>
+
+      <li className="nav-item">
+        <NavLink
+          to="/myportfolio/ProjectGallery"
+          className={({ isActive }) =>
+            isActive ? 'nav-link active' : 'nav-link'
+          }
+        >
+          ProjectGallery
         </NavLink>
       </li>
       <li className="nav-item">
         <NavLink
-          to="/myportfolio/contact"
+          to="/myportfolio/contact/"
           end
           className={({ isActive }) =>
             isActive ? 'nav-link active' : 'nav-link'
@@ -48,18 +65,13 @@ function NavTabs() {
           Contact
         </NavLink>
       </li>
-      <li className="nav-item">
-        <NavLink
-          to="/myportfolio/contact/learn"
-          className={({ isActive }) =>
-            isActive ? 'nav-link active' : 'nav-link'
-          }
-        >
-          Learn
-        </NavLink>
-      </li>
+
+
+      
+  
     </ul>
-  );
-}
+  
+  </ul>
+)}
 
 export default NavTabs;
