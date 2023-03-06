@@ -1,10 +1,12 @@
 import bodyParser from "body-parser";
 import React from "react";
+import image from "../imgs/bgstars.jpg";
 
 function Home() {
   return (
     
-    <div>
+    <div style={{ backgroundImage:`url(${image})`,backgroundRepeat:"no-repeat", height:"100%vw" }}>
+      <div>
       <h1>Home Page</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit, lobortis ut magna
@@ -17,7 +19,7 @@ function Home() {
         malesuada fames ac ante ipsum primis in faucibus.
       </p>
     </div>
-    
+    </div>
   );
 }
 
